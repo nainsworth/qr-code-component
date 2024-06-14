@@ -16,13 +16,15 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
       :root {
         --white: hsl(0, 0%, 100%);
         --light-gray: hsl(212, 45%, 89%);
         --grayish-blue: hsl(220, 15%, 55%);
         --dark-blue: hsl(218, 44%, 22%);
 
-        --font-outfit: [Outfit](https://fonts.google.com/specimen/Outfit);
+        --font-outfit: "Outfit";
         --font-regular: 400;
         --font-bold: 700;
         --font-size: 15px;
@@ -64,7 +66,7 @@
         background-color: var(--white);
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        padding: 15px;
         align-items: center;
         border-radius: 20px;
       }
@@ -73,6 +75,27 @@
         width: 288px;
         height: 288px;
         border-radius: 10px;
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        gap: 20px;
+      }
+
+      .title {
+        font-weight: var(--font-bold);
+        font-size: 22px;
+        color: var(--dark-blue);
+      }
+
+      .description {
+        color: var(--grayish-blue);
+        width: 256px;
       }
 
       .attribution {
